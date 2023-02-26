@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.io.IOException;
-import java.sql.SQLOutput;
+
 
 public class HelloApplication extends Application {
 
