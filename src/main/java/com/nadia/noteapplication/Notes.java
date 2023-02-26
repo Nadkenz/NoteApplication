@@ -1,6 +1,7 @@
 package com.nadia.noteapplication;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "notes")
@@ -25,7 +26,7 @@ public class Notes {
 
 
     //Constructor --------------------------------------------------------------------------
-    public Notes() {
+    public Notes(int note_id, String note_title) {
     }
 
     public Notes(int noteId, String noteTitle, String noteContent) {
@@ -39,6 +40,10 @@ public class Notes {
     }
 
     public Notes(String text) {
+    }
+
+    public Notes() {
+
     }
 
     //Getters & setters --------------------------------------------------------------------------
@@ -64,5 +69,13 @@ public class Notes {
 
     public void setNoteContent(String noteContent) {
         this.noteContent = noteContent;
+    }
+
+
+    public void setnotedata(String updateTitle, String updateContent) {
+    }
+
+    public <E> List getTags() {
+        return null;
     }
 }
