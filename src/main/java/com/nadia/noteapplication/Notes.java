@@ -78,4 +78,14 @@ public class Notes {
     public <E> List getTags() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Notes{" +
+                "noteId=" + noteId +
+                ", noteTitle='" + noteTitle + '\'' +
+                ", noteContent='" + noteContent + '\'' +
+                ", tag_id=" + tag_id +
+                '}';
+    }
 }

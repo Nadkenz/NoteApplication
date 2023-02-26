@@ -49,4 +49,13 @@ public class Tags {  //Properties ----------------------------------------------
     public void setTagContent(String tagContent) {
         this.tagContent = tagContent;
     }
+
+    @Override
+    public String toString() {
+        return "Tags{" +
+                "tagId=" + tagId +
+                ", tagContent='" + tagContent + '\'' +
+                ", note_id=" + note_id +
+                '}';
+    }
 }
